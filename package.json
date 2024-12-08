@@ -1,0 +1,23 @@
+{
+  "name": "pre-venda-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "^5.7.2",
+    "express": "^4.21.1",
+    "fs": "^0.0.1-security",
+    "node-telegram-bot-api": "^0.66.0",
+    "path": "^0.12.7",
+    "tinyurl": "^1.1.7",
+    "ws": "^8.18.0"
+  }
+}
