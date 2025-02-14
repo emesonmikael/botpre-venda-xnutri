@@ -157,28 +157,28 @@ const sendPurchaseGuide = () => {
 };
 
 // Configuração dos comandos do bot
-bot.onText(/\/start2/, (msg) => {
+bot.onText(/\/startxnt/, (msg) => {
     const chatId = msg.chat.id;
     bot.sendMessage(chatId, "Bem-vindo ao Bot da Crowdsale! Use /help para ver os comandos disponíveis.");
 });
 
-bot.onText(/\/help2/, (msg) => {
+bot.onText(/\/helpxnt/, (msg) => {
     const chatId = msg.chat.id;
     const helpMessage = `
 📋 *Comandos Disponíveis:*
-/start2 - Iniciar interação com o bot
-/help2 - Mostrar esta mensagem de ajuda
-/guide2 - Receber orientações de como comprar tokens
-/status2 - Verificar o status atual da crowdsale
+/startxnt - Iniciar interação com o bot
+/helpxnt - Mostrar esta mensagem de ajuda
+/guidexnt - Receber orientações de como comprar tokens
+/statusxnt - Verificar o status atual da crowdsale
     `;
     bot.sendMessage(chatId, helpMessage, { parse_mode: 'Markdown' });
 });
 
-bot.onText(/\/guide2/, (msg) => {
+bot.onText(/\/guidexnt/, (msg) => {
     sendPurchaseGuide();
 });
 
-bot.onText(/\/status2/, async (msg) => {
+bot.onText(/\/statusxnt/, async (msg) => {
     const chatId = msg.chat.id;
     try {
         const tokenContract = await getTokenContract();
@@ -192,7 +192,7 @@ bot.onText(/\/status2/, async (msg) => {
         const formattedWeiRaised = ethers.utils.formatEther(weiRaised);
         const formattedRate = ethers.utils.formatEther(rate);
         const message = `
-📊 *Status da Pre-Venda2:*
+📊 *Status da Pre-Venda xnt:*
 
 🏦 *Tokens restantes* ${formattedRemaining} ${symbol}
 💰 *BNB Arrecadados:* ${formattedWeiRaised} BNB
