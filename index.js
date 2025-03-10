@@ -169,7 +169,7 @@ bot.onText(/\/helpxnt/, (msg) => {
 /startxnt - Iniciar interação com o bot
 /helpxnt - Mostrar esta mensagem de ajuda
 /guidexnt - Receber orientações de como comprar tokens
-/status - Verificar o status atual da crowdsale
+/statusxnt - Verificar o status atual da crowdsale
     `;
     bot.sendMessage(chatId, helpMessage, { parse_mode: 'Markdown' });
 });
@@ -178,7 +178,7 @@ bot.onText(/\/guidexnt/, (msg) => {
     sendPurchaseGuide();
 });
 
-bot.onText(/\/status/, async (msg) => {
+bot.onText(/\/statusxnt/, async (msg) => {
     const chatId = msg.chat.id;
     try {
         const tokenContract = await getTokenContract();
