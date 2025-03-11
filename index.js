@@ -170,7 +170,7 @@ bot.onText(/\/helpxnt/, (msg) => {
 /startxnt - Iniciar interação com o bot
 /helpxnt - Mostrar esta mensagem de ajuda
 /guidexnt - Receber orientações de como comprar tokens
-/status - Verificar o status atual da crowdsale
+/status - Verificar o status atual da Pre-venda
     `;
     bot.sendMessage(chatId, helpMessage, { parse_mode: 'Markdown' });
 });
