@@ -1,4 +1,5 @@
 // src/index.js
+//TELEGRAM_BOT_TOKEN=7992850388:AAGzWrjjU-Qs9BjthiFxdP2UXn0FDGnazH4
 require('dotenv').config();
 const { ethers } = require('ethers'); // Import correto para ethers.js v5
 const TelegramBot = require('node-telegram-bot-api');
