@@ -178,7 +178,7 @@ bot.onText(/\/guidexnt/, (msg) => {
     sendPurchaseGuide();
 });
 
-bot.onText(/\/statusxnt/, async (msg) => {
+bot.onText(/\/status/, async (msg) => {
     const chatId = msg.chat.id;
     try {
         const tokenContract = await getTokenContract();
